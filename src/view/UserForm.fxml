@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="822.0" prefWidth="1358.0" style="-fx-background-color: white;" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserFormController">
+   <children>
+      <TableView fx:id="tblUser" layoutX="40.0" layoutY="375.0" prefHeight="385.0" prefWidth="1269.0">
+         <columns>
+            <TableColumn fx:id="colUserID" prefWidth="96.0" text="User_ID" />
+            <TableColumn fx:id="colName" prefWidth="172.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="319.0" text="Address" />
+            <TableColumn fx:id="colEmail" prefWidth="261.0" text="E-Mail" />
+            <TableColumn fx:id="colPhoneNumber" prefWidth="207.0" text="Telephone Number" />
+            <TableColumn fx:id="colPassword" prefWidth="213.0" text="PassWord" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1102.0" layoutY="25.0" onAction="#btnUpdateOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1102.0" layoutY="112.0" onAction="#btnDeleteOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1102.0" layoutY="199.0" onAction="#btnSearchOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnAddUser" buttonType="RAISED" layoutX="1102.0" layoutY="293.0" onAction="#btnAddUserOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="+User" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane layoutX="36.0" layoutY="83.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtUserID" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="U-0001" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="User ID" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="664.0" layoutY="83.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtName" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="kamal" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Name" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="36.0" layoutY="178.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtAddress" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="No 26  Badulla " styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Address" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="664.0" layoutY="178.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtEmail" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="kamalsilva@gmail.com" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="E Mail" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="36.0" layoutY="272.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtPhoneNumber" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="0754306504" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Telephone Number" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="664.0" layoutY="272.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtPassword" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="1234" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Password" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

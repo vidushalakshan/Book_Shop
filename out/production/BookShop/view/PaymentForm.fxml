@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="822.0" prefWidth="1358.0" style="-fx-background-color: white;" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaymentFormController">
+   <children>
+      <TableView fx:id="tblPayment" layoutX="20.0" layoutY="57.0" prefHeight="603.0" prefWidth="1319.0">
+         <columns>
+            <TableColumn fx:id="colOrderID" prefWidth="117.0" text="Pay_ID" />
+            <TableColumn fx:id="colItemID" prefWidth="131.0" text="Item_ID" />
+            <TableColumn fx:id="colCustomerID" prefWidth="125.0" text="Cus_ID" />
+            <TableColumn fx:id="colOrderDate" prefWidth="196.0" text="Order Date" />
+            <TableColumn fx:id="colOrderTime" prefWidth="217.0" text="Order Time" />
+            <TableColumn fx:id="colQTY" prefWidth="132.0" text="QTY" />
+            <TableColumn fx:id="colPrice" prefWidth="211.0" text="Price" />
+            <TableColumn fx:id="colCost" prefWidth="189.0" text="Cost" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1080.0" layoutY="705.0" onAction="#btnRemoveOnAction" prefHeight="84.0" prefWidth="255.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="Remove Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="795.0" layoutY="705.0" onAction="#btnSearchOnAction" prefHeight="84.0" prefWidth="255.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtOrderID" labelFloat="true" layoutX="42.0" layoutY="684.0" opacity="0.0" prefHeight="31.0" prefWidth="156.0" promptText="Cus ID" />
+      <JFXTextField fx:id="txtItemID" labelFloat="true" layoutX="230.0" layoutY="684.0" opacity="0.0" prefHeight="31.0" prefWidth="156.0" promptText="Cus ID" />
+      <JFXTextField fx:id="txtOrderDate" labelFloat="true" layoutX="440.0" layoutY="684.0" opacity="0.0" prefHeight="31.0" prefWidth="156.0" promptText="Cus ID" />
+      <JFXTextField fx:id="txtOrderTime" labelFloat="true" layoutX="657.0" layoutY="669.0" opacity="0.0" prefHeight="31.0" prefWidth="156.0" promptText="Cus ID" />
+      <JFXTextField fx:id="txtqty" labelFloat="true" layoutX="857.0" layoutY="669.0" opacity="0.0" prefHeight="31.0" prefWidth="156.0" promptText="Cus ID" />
+      <JFXTextField fx:id="txtprice" labelFloat="true" layoutX="1041.0" layoutY="669.0" opacity="0.0" prefHeight="31.0" prefWidth="156.0" promptText="Cus ID" />
+      <JFXTextField fx:id="txtCost" labelFloat="true" layoutX="1168.0" layoutY="669.0" opacity="0.0" prefHeight="31.0" prefWidth="156.0" promptText="Cus ID" />
+      <JFXTextField fx:id="txtStatus" labelFloat="true" layoutX="417.0" layoutY="747.0" opacity="0.0" prefHeight="31.0" prefWidth="240.0" promptText="Cus ID" />
+      <AnchorPane layoutX="36.0" layoutY="736.0" prefHeight="42.0" prefWidth="320.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtCustomerID" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="323.0" promptText="C-0001" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Customer ID" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="73.0" fitWidth="131.0" layoutX="581.0" layoutY="691.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/external-report-digital-marketing-flatart-icons-outline-flatarticons.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="610.0" layoutY="759.0" prefHeight="44.0" prefWidth="73.0" text="Report" textFill="#070606">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="570.0" layoutY="689.0" onMouseClicked="#report" opacity="0.0" prefHeight="117.0" prefWidth="154.0" style="-fx-background-color: #290FBA; -fx-background-radius: 30;" text="Deliver" textFill="WHITE">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

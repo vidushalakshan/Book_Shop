@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="642.0" prefWidth="767.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.logingFormController">
+   <children>
+      <ImageView disable="true" fitHeight="643.0" fitWidth="392.0" focusTraversable="true" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/book-shop-front-view-city-design-elements-cartoon-vector-36183158.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" focusColor="BLACK" labelFloat="true" layoutX="458.0" layoutY="258.0" prefHeight="38.0" prefWidth="283.0" promptText="User Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassWord" focusColor="#04123c" labelFloat="true" layoutX="458.0" layoutY="346.0" prefHeight="38.0" prefWidth="283.0" promptText="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="423.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/220px-User_icon_2.svg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="426.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/232962.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="31.0" layoutX="453.0" layoutY="586.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/fb_icon_325x325.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="31.0" layoutX="584.0" layoutY="586.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/instagram.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="696.0" layoutY="583.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/WhatsApp.svg.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="474.0" layoutY="428.0" onAction="#AdminLoginOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #290FBA; -fx-background-radius: 30;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="79.0" fitWidth="200.0" layoutX="426.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/fed4eeb55543f4b5fe8001da0ef8921d.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="200.0" layoutX="635.0" layoutY="24.0" onMouseClicked="#LoginFormOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/dgsadgx.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

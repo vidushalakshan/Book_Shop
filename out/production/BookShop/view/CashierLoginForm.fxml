@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="640.0" prefWidth="764.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierLoginFormController">
+   <children>
+      <ImageView disable="true" fitHeight="643.0" fitWidth="392.0" focusTraversable="true" layoutX="9.0" layoutY="-3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/book-shop-front-view-city-design-elements-cartoon-vector-36183158.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="txtUserName" focusColor="BLACK" labelFloat="true" layoutX="468.0" layoutY="268.0" prefHeight="38.0" prefWidth="263.0" promptText="User Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassWord" focusColor="#04123c" labelFloat="true" layoutX="468.0" layoutY="356.0" prefHeight="38.0" prefWidth="263.0" promptText="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="433.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/220px-User_icon_2.svg.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="25.0" layoutX="436.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/232962.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="31.0" layoutX="463.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/fb_icon_325x325.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="31.0" layoutX="594.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/instagram.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="42.0" layoutX="706.0" layoutY="593.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/WhatsApp.svg.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="490.0" layoutY="441.0" onAction="#LoginOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #290FBA; -fx-background-radius: 30;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="79.0" fitWidth="200.0" layoutX="436.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/fb75d6188c34bf73646f0997aa37e11d.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="200.0" layoutX="625.0" layoutY="14.0" onMouseClicked="#AdminLoginFormOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/dgsadgx.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="lblUserName" layoutX="590.0" layoutY="308.0" prefHeight="21.0" prefWidth="145.0" text="User Name Does Not Mathed" textFill="#f80000">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPassword" layoutX="590.0" layoutY="394.0" prefHeight="21.0" prefWidth="145.0" text="User Name Does Not Mathed" textFill="#f80000">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

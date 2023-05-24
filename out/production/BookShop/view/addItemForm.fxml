@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="context" prefHeight="822.0" prefWidth="1358.0" style="-fx-background-color: white;" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.addItemFormController">
+   <children>
+      <Label fx:id="lblDate" layoutX="387.0" layoutY="177.0" prefHeight="85.0" prefWidth="286.0" textFill="#8d1f1f">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCategories" labelFloat="true" layoutX="581.0" layoutY="186.0" prefHeight="31.0" prefWidth="406.0" promptText="Categorie" />
+      <TableView fx:id="tblItem" layoutX="54.0" layoutY="406.0" prefHeight="343.0" prefWidth="1277.0">
+         <columns>
+            <TableColumn fx:id="colItemID" prefWidth="166.0" text="Item_ID" />
+            <TableColumn fx:id="colName" prefWidth="307.0" text="Name" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="177.0" text="QTYOnHand" />
+            <TableColumn fx:id="colCategorie" prefWidth="168.0" text="Categorie" />
+            <TableColumn fx:id="colDescription" prefWidth="257.0" text="Description" />
+            <TableColumn fx:id="colPrice" prefWidth="201.0" text="Price" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutX="44.0" layoutY="195.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtQTYOnHand" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="50" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="QtyOnHand" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="44.0" layoutY="298.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtDescription" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="Novel" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Description" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="581.0" layoutY="71.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtName" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="MadolDuuwa" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Item Name" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="581.0" layoutY="298.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtPrice" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="50.0" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Price" />
+         </children>
+      </AnchorPane>
+      <JFXButton buttonType="RAISED" layoutX="1110.0" layoutY="50.0" onAction="#btnUpdateOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1110.0" layoutY="138.0" onAction="#btnDeleteOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1110.0" layoutY="225.0" onAction="#btnSearchOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnAddItem" buttonType="RAISED" layoutX="1110.0" layoutY="319.0" onAction="#btnAddItemOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="+Item" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane layoutX="44.0" layoutY="77.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtItemID" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="I-0001" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Item ID" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="822.0" prefWidth="1358.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminHomeFormController">
+   <children>
+      <Pane layoutX="41.0" layoutY="295.0" prefHeight="200.0" prefWidth="307.0" style="-fx-background-color: #86340A;">
+         <children>
+            <ImageView fitHeight="96.0" fitWidth="172.0" layoutX="73.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/3fd1f8e2d250c1dcf07fff368d38900b.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblItems" layoutX="115.0" layoutY="81.0" prefHeight="93.0" prefWidth="77.0" text="10" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="980.0" layoutY="295.0" prefHeight="200.0" prefWidth="307.0" style="-fx-background-color: #FC5404;">
+         <children>
+            <ImageView fitHeight="99.0" fitWidth="161.0" layoutX="73.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/0bfb10000dbd4e615329e25eb62d3e02.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblUsers" layoutX="115.0" layoutY="70.0" prefHeight="93.0" prefWidth="77.0" text="02" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="41.0" layoutY="592.0" prefHeight="200.0" prefWidth="307.0" style="-fx-background-color: #FFB319;">
+         <children>
+            <ImageView fitHeight="79.0" fitWidth="197.0" layoutX="55.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/d79c7da8e5186e0a4f148fac5f9c8332.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblEmployees" layoutX="115.0" layoutY="70.0" prefHeight="93.0" prefWidth="77.0" text="07" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="980.0" layoutY="582.0" prefHeight="200.0" prefWidth="307.0" style="-fx-background-color: #FC5404;">
+         <children>
+            <ImageView fitHeight="99.0" fitWidth="161.0" layoutX="73.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/35f24eb80d8084f09a236022c09e5ea3.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblPayed" layoutX="111.0" layoutY="77.0" prefHeight="93.0" prefWidth="85.0" text="02" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="793.0" layoutY="171.0" prefHeight="45.0" prefWidth="140.0" text="Time :" textFill="#9e6d6d">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="171.0" prefHeight="45.0" prefWidth="140.0" text="Date :" textFill="#9e6d6d">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="911.0" layoutY="153.0" prefHeight="85.0" prefWidth="369.0" textFill="#8d1f1f">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="254.0" layoutY="153.0" prefHeight="85.0" prefWidth="369.0" textFill="#8d1f1f">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="892.0" layoutX="232.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/f7c619fae143210cad18ff122ed97f38.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="500.0" fitWidth="612.0" layoutX="354.0" layoutY="294.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/—Pngtree—open%20book%20icon%20simple%20illustration_4896354.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

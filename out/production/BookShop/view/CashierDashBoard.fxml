@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="950.0" prefWidth="1757.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierDashBoardController">
+   <children>
+      <Pane layoutY="-5.0" prefHeight="967.0" prefWidth="360.0" style="-fx-background-color: #2978B5;">
+         <children>
+            <Label layoutX="127.0" layoutY="463.0" prefHeight="31.0" prefWidth="107.0" text="Customers" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="85.0" fitWidth="114.0" layoutX="121.0" layoutY="382.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-user-64.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="145.0" layoutY="663.0" prefHeight="31.0" prefWidth="66.0" text="Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="85.0" fitWidth="124.0" layoutX="116.0" layoutY="578.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-similar-items-50.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="106.0" layoutY="856.0" prefHeight="32.0" prefWidth="157.0" text="Payed&amp;Diliver" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="85.0" fitWidth="124.0" layoutX="122.0" layoutY="771.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-get-cash-50.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="114.0" layoutY="382.0" onAction="#CustomerOnAction" opacity="0.0" prefHeight="117.0" prefWidth="131.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="115.0" layoutY="568.0" onAction="#OrderOnAction" opacity="0.0" prefHeight="135.0" prefWidth="131.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="101.0" layoutY="771.0" onAction="#DeliveringOnAction" opacity="0.0" prefHeight="117.0" prefWidth="157.0" text="Button">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="127.0" layoutY="281.0" prefHeight="31.0" prefWidth="113.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="85.0" fitWidth="114.0" layoutX="121.0" layoutY="196.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/icons8-dashboard-50.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="115.0" layoutY="196.0" onAction="#DashBoardOnAction" opacity="0.0" prefHeight="117.0" prefWidth="131.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="117.0" fitWidth="331.0" layoutX="15.0" layoutY="28.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/d2d1d3df53ce0f09226b4dda780c0b0a.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="15.0" layoutY="932.0" prefHeight="21.0" prefWidth="88.0" text="Version 9.1" />
+            <Separator layoutX="15.0" layoutY="132.0" prefHeight="5.0" prefWidth="331.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="358.0" prefHeight="135.0" prefWidth="1399.0" style="-fx-background-color: #2978B5;">
+         <children>
+            <Separator layoutX="-3.0" layoutY="9.0" orientation="VERTICAL" prefHeight="117.0" prefWidth="5.0" />
+            <ImageView fitHeight="117.0" fitWidth="761.0" layoutX="36.0" layoutY="9.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/917b7046c79f901bf835f70498862fc9.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="74.0" layoutX="1253.0" layoutY="36.0" onMouseClicked="#LogoutOnMouseClicked" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/shutdown.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="context" layoutX="358.0" layoutY="135.0" prefHeight="824.0" prefWidth="1399.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

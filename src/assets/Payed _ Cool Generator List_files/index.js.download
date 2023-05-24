@@ -1,0 +1,44 @@
+$(function(){
+
+$("a").bind("focus", function(){
+      if(this.blur){
+        this.blur();
+      }
+    });
+
+  $('.spinner .btn:first-of-type').on('click', function() {  
+    $('.spinner input').val( parseInt($('.spinner input').val(), 10) + 1);  
+  });  
+  $('.spinner .btn:last-of-type').on('click', function() {  
+    $('.spinner input').val( parseInt($('.spinner input').val(), 10) - 1);
+    if(parseInt($('.spinner input').val(), 10) <= '1'){
+      $('.spinner input').val(1);
+    }
+  });
+
+// var show1='<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- person-336 --> <ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-4448346533419540" data-ad-slot="4562101662"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>';
+//     $('.show-1').each(function(){
+//       $(this).html(show1);
+//     });
+    
+//   var link='<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- person-link --> <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-4448346533419540" data-ad-slot="5199916988" data-ad-format="link" data-full-width-responsive="true"></ins> <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>';
+//     $('.show-link').each(function(){
+//       $(this).html(link);
+//     });
+
+var show1='<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- fag-8-4 --><ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-7258141406498767" data-ad-slot="7272311324"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({}); </script>';
+    $('.show-1').each(function(){
+      $(this).html(show1);
+    });
+    
+  var link='<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><!-- fag-address-link --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7258141406498767" data-ad-slot="1158913566" data-ad-format="link"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({}); </script>';
+  var link_new='<div class="text-center"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <!-- bestrandoms-300x90 --> <ins class="adsbygoogle" style="display:inline-block;width:300px;height:90px" data-ad-client="ca-pub-7258141406498767" data-ad-slot="1034359770"></ins><script> (adsbygoogle = window.adsbygoogle || []).push({});</script></div>';
+  var len=$('.show-link').length;
+    if(len > 1){
+        $('.show-link').eq(0).html(link_new);
+        $('.show-link').eq(1).html(link);
+    }else{
+        $('.show-link').eq(0).html(link);
+    }
+
+});

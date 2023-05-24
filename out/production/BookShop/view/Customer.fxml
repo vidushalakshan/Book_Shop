@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="824.0" prefWidth="1399.0" style="-fx-background-color: white;" stylesheets="@../styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+   <children>
+      <TableView fx:id="tblCustomer" layoutX="62.0" layoutY="385.0" prefHeight="375.0" prefWidth="1280.0">
+         <columns>
+            <TableColumn fx:id="colCusID" prefWidth="193.99996948242188" text="Cus_ID" />
+            <TableColumn fx:id="colName" prefWidth="495.0" text="Name" />
+            <TableColumn fx:id="colNIC" prefWidth="286.0" text="Nic" />
+            <TableColumn fx:id="colMobileNumber" prefWidth="304.0" text="Telephone Number" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" layoutX="1131.0" layoutY="111.0" onAction="#btnDeleteOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1131.0" layoutY="198.0" onAction="#btnSearchOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnAddClient" buttonType="RAISED" layoutX="1131.0" layoutY="292.0" onAction="#btnAddClientOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="+Client" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1131.0" layoutY="23.0" onAction="#btnUpdateOnAction" prefHeight="63.0" prefWidth="220.0" style="-fx-background-color: #16C79A; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane layoutX="62.0" layoutY="90.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtCusID" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="C-0001" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Customer ID" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="598.0" layoutY="90.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtName" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="Kamal Silva" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Name" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="62.0" layoutY="227.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtNIC" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="19995485554" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="NIC" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="598.0" layoutY="227.0" prefHeight="42.0" prefWidth="406.0" styleClass="textPane" stylesheets="@../styles/style.css">
+         <children>
+            <TextField fx:id="txtMobileNumber" layoutX="13.0" layoutY="8.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="375.0" promptText="074-5896471" styleClass="textField" />
+            <Label layoutX="2.0" layoutY="-9.0" styleClass="textLabel" text="Telephone Number" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
