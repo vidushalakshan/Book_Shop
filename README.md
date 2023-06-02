@@ -6,6 +6,9 @@
 ![park](./src/assets/readme/adminLogin.png)
 
 # *Item*
+![park](./src/assets/readme/adminDash.png)
+
+# *Item*
 ![park](./src/assets/readme/adminItem.png)
 
 # *User*
@@ -22,6 +25,9 @@
 
 # *Cashier Login*
 ![park](./src/assets/readme/cashLoging.png)
+
+# *Item*
+![park](./src/assets/readme/cashDash.png)
 
 # *Customer*
 ![park](./src/assets/readme/cashCustomer.png)
