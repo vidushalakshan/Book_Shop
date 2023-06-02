@@ -5,7 +5,7 @@
 # *Admin Login*
 ![park](./src/assets/readme/adminLogin.png)
 
-# *Item*
+# *Admin Dashboard*
 ![park](./src/assets/readme/adminDash.png)
 
 # *Item*
@@ -26,7 +26,7 @@
 # *Cashier Login*
 ![park](./src/assets/readme/cashLoging.png)
 
-# *Item*
+# *Cashier Dashboard*
 ![park](./src/assets/readme/cashDash.png)
 
 # *Customer*
